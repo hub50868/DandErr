@@ -1,7 +1,7 @@
 ﻿namespace DanE.Web
 {
-    public static class Startup
-    {
-        public static void ConfigureServices(IServiceCollection services) { }
-    }
+	public static class Startup
+	{
+		public static void ConfigureServices(IServiceCollection services) { }
+	}
 }

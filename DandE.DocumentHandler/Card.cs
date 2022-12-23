@@ -42,14 +42,14 @@
             {
                 File.ReadAllBytes(fileName);
 
-                throw new FileNotFoundException(fileName);
+                //throw new FileNotFoundException(fileName);
                 return true;
             }
-            catch(ForbiddenDocumentException)
+            catch (ForbiddenDocumentException)
             {
                 return false;
             }
-            catch(FileNotFoundException fileNotFound)
+            catch (FileNotFoundException fileNotFound)
             {
                 logger.LogInformation($"Could not find file '{fileName}'");
                 logger.LogError(fileNotFound.ToString());
